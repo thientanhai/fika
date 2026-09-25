@@ -1,0 +1,32 @@
+# Environment & Credentials
+wp-config.php
+.env
+
+# Logs & Cache
+*.log
+error_log
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+
+# Uploads (Media files)
+# Uncomment the line below if you don't want to track media uploads in git:
+# wp-content/uploads/
+
+# Dependency directories
+node_modules/
+vendor/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
