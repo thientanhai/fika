@@ -1,0 +1,29 @@
+FIKA FLATSOME CHILD 3.10.5 — CHECKLIST
+======================================
+
+[ ] Theme hiển thị Version 3.10.5 và Flatsome Child đang kích hoạt.
+[ ] Source HTML không còn http://fikapouches.com hoặc http://www.fikapouches.com.
+[ ] XFN profile dùng https://gmpg.org/xfn/11.
+[ ] Namespace SVG http://www.w3.org/2000/svg vẫn được giữ nguyên.
+[ ] Blog VN/EN dùng H1 archive và H2 cho tiêu đề card.
+[ ] Product search không nhận class/layout Blog Archive.
+[ ] Custom post-type search không nhận layout Blog Archive.
+[ ] Breadcrumb Single Post khớp Primary Category của Rank Math.
+[ ] URL danh mục VN/EN trả 200 và không chuyển hướng vòng lặp.
+[ ] URL danh mục cũ + filter chỉ có tối đa một 301.
+[ ] Filter hợp lệ có noindex, follow và không có canonical/schema/hreflang.
+[ ] Filter sai/rỗng trả 404 thật.
+[ ] Robots.txt không chặn filter khi đang chờ Google xử lý noindex.
+[ ] product_cat-sitemap.xml có danh mục VN và EN.
+[ ] Menu desktop/mobile/off-canvas không còn Cart, Checkout, My Account hoặc
+    link Login dẫn đến /en/my-account/.
+[ ] /en/my-account/ có thể tiếp tục trả 404 nhưng không còn internal link tới nó.
+[ ] Các trang 2+ Product Category/Product Brand sạch có đủ hreflang vi và en.
+[ ] Hreflang phân trang giữ cùng số trang; ví dụ page/2/ ghép với page/2/.
+[ ] Mỗi trang phân trang chỉ có một thẻ alternate cho vi và một thẻ cho en.
+[ ] Nút chuyển VI/EN trên phân trang giữ đúng số trang tương ứng.
+[ ] URL phân trang có query/filter/tracking không được theme tự thêm hreflang.
+[ ] Không có cảnh báo collision; nếu có phải xử lý slug trước khi tạo nội dung mới.
+[ ] Sao rỗng không hiển thị; rating thật vẫn hiển thị.
+[ ] Giỏ hàng, checkout, tài khoản và giao dịch trực tuyến vẫn bị vô hiệu hóa.
+[ ] PHP error_log và Console không có lỗi mới.

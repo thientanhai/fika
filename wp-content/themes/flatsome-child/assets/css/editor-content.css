@@ -1,0 +1,95 @@
+/* Classic Editor preview for Fika Pouches blog posts. */
+body.fika-editor-content,
+body#tinymce.wp-editor {
+	background: #fff;
+	color: #303644;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.82;
+	margin: 24px auto;
+	max-width: 820px;
+	padding: 0 24px 80px;
+}
+
+body.fika-editor-content p,
+body#tinymce.wp-editor p { margin: 0 0 1.45em; }
+
+body.fika-editor-content h2,
+body.fika-editor-content h3,
+body.fika-editor-content h4,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4 {
+	color: #141824;
+	font-weight: 750;
+	letter-spacing: -.02em;
+	line-height: 1.28;
+}
+
+body.fika-editor-content h2,
+body#tinymce.wp-editor h2 {
+	border-bottom: 1px solid #e5e8ee;
+	font-size: 2rem;
+	margin: 2.15em 0 .8em;
+	padding-bottom: .42em;
+}
+
+body.fika-editor-content h3,
+body#tinymce.wp-editor h3 { font-size: 1.55rem; margin: 1.75em 0 .65em; }
+
+body.fika-editor-content h4,
+body#tinymce.wp-editor h4 { font-size: 1.15rem; margin: 1.5em 0 .55em; }
+
+body.fika-editor-content a,
+body#tinymce.wp-editor a { color: #173fa6; font-weight: 600; text-underline-offset: .18em; }
+
+body.fika-editor-content li,
+body#tinymce.wp-editor li { margin-bottom: .45em; }
+
+body.fika-editor-content blockquote,
+body#tinymce.wp-editor blockquote {
+	background: #f5f7fb;
+	border: 0;
+	border-left: 4px solid #173fa6;
+	border-radius: 0 16px 16px 0;
+	font-style: normal;
+	margin: 1.5em 0;
+	padding: 1.25em 1.4em;
+}
+
+body.fika-editor-content img,
+body#tinymce.wp-editor img { border-radius: 12px; height: auto; max-width: 100%; }
+
+body.fika-editor-content table,
+body#tinymce.wp-editor table { border-collapse: collapse; font-size: .92em; width: 100%; }
+
+body.fika-editor-content th,
+body.fika-editor-content td,
+body#tinymce.wp-editor th,
+body#tinymce.wp-editor td { border: 1px solid #e5e8ee; padding: .85em 1em; text-align: left; }
+
+body.fika-editor-content th,
+body#tinymce.wp-editor th { background: #edf1f8; color: #141824; font-weight: 700; }
+
+body.fika-editor-content .fika-note,
+body.fika-editor-content .fika-tip,
+body.fika-editor-content .fika-warning,
+body.fika-editor-content .fika-summary,
+body#tinymce.wp-editor .fika-note,
+body#tinymce.wp-editor .fika-tip,
+body#tinymce.wp-editor .fika-warning,
+body#tinymce.wp-editor .fika-summary {
+	border: 1px solid;
+	border-radius: 16px;
+	margin-bottom: 1.45em;
+	padding: 1.15em 1.3em;
+}
+
+body.fika-editor-content .fika-note,
+body#tinymce.wp-editor .fika-note { background: #eff6ff; border-color: #bfdbfe; }
+body.fika-editor-content .fika-tip,
+body#tinymce.wp-editor .fika-tip { background: #ecfdf3; border-color: #a7f3d0; }
+body.fika-editor-content .fika-warning,
+body#tinymce.wp-editor .fika-warning { background: #fff7ed; border-color: #fed7aa; }
+body.fika-editor-content .fika-summary,
+body#tinymce.wp-editor .fika-summary { background: #f5f3ff; border-color: #ddd6fe; }

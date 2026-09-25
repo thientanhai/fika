@@ -1,0 +1,55 @@
+FIKA FLATSOME CHILD 3.10.5 — HƯỚNG DẪN
+=========================================
+
+1. NỘI DUNG ĐÃ SỬA
+-------------------
+- Chuyển URL nội bộ cũ dùng http://fikapouches.com hoặc www sang origin HTTPS
+  chuẩn khi HTML front-end được xuất ra.
+- Chuyển XFN profile của Flatsome từ HTTP sang HTTPS.
+- Không tự ý đổi URL HTTP của website bên ngoài vì không thể bảo đảm bên thứ ba
+  hỗ trợ HTTPS.
+- Giữ nguyên namespace SVG http://www.w3.org/2000/svg. Đây là định danh chuẩn,
+  không phải tài nguyên mixed content và không được đổi thành HTTPS.
+- Gỡ metadata XMP không cần thiết khỏi ảnh logo đi kèm theme.
+
+2. CẬP NHẬT
+-----------
+1) Sao lưu thư mục flatsome-child và cơ sở dữ liệu.
+2) Giao diện > Thêm giao diện mới > Tải giao diện lên.
+3) Chọn Fika-Flatsome-Child-3.10.5.zip và xác nhận thay thế.
+4) Đảm bảo Flatsome Child vẫn đang kích hoạt.
+5) Cài đặt > Đường dẫn tĩnh > bấm Lưu thay đổi một lần.
+6) Xóa toàn bộ LiteSpeed/QUIC.cloud/CDN/browser cache.
+
+Lần tải đầu sau cập nhật có thể chạy một lần làm mới rewrite và cache sitemap.
+
+3. THIẾT LẬP FILTER SEO
+----------------------
+Không thêm dòng sau vào wp-config.php trong giai đoạn Google còn đang loại URL
+filter cũ khỏi chỉ mục:
+
+define( 'FIKA_BLOCK_FILTER_CRAWL', true );
+
+Mặc định theme không chặn crawl filter. URL filter hợp lệ được noindex, follow;
+filter sai hoặc không có kết quả trả 404.
+
+4. KIỂM TRA SAU CÀI ĐẶT
+-----------------------
+- Kiểm tra /tin-tuc/ và /en/news/.
+- Kiểm tra tìm kiếm Blog và tìm kiếm Product riêng biệt.
+- Kiểm tra /nicotine-pouches/ và /en/nicotine-pouches-en/.
+- Kiểm tra filter hợp lệ, filter rỗng và filter sai.
+- Kiểm tra product_cat-sitemap.xml có cả URL VN và EN.
+- Kiểm tra source menu EN không còn link /en/my-account/; phần tử Account phải
+  được tắt trong Flatsome > Theme Options > Header > Header Mobile Menu.
+- Kiểm tra trang 2+ của Nicotine Pouches, Cuba, ZYN và VELO có đủ hreflang
+  vi/en, đúng số trang và tự tham chiếu đúng ngôn ngữ.
+- Kiểm tra nút VI/EN trên trang 2+ giữ nguyên số trang tương ứng.
+- Kiểm tra quản trị không có cảnh báo URL collision mới.
+- Kiểm tra PHP error_log và Console.
+- Xem source trang chủ và tìm `http://`. Kết quả hợp lệ chỉ có thể còn namespace
+  kỹ thuật như http://www.w3.org/2000/svg; không được còn URL nội bộ Fika dùng HTTP.
+
+5. HOÀN TÁC
+-----------
+Cài lại Fika-Flatsome-Child-3.10.4.zip, lưu lại Đường dẫn tĩnh và xóa cache.

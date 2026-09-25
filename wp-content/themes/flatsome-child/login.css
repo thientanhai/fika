@@ -1,0 +1,240 @@
+/* =====================================
+   FIKA POUCHES - MODERN LOGIN
+===================================== */
+
+html,
+body.login{
+    margin:0 !important;
+    padding:0 !important;
+    width:100%;
+    min-height:100vh;
+    background:#f5f7fb;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body.login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding:32px 0 !important;
+    box-sizing:border-box;
+}
+
+/* Background Effect */
+
+body.login::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:#3247b8;
+    opacity:.08;
+    top:-220px;
+    right:-180px;
+    filter:blur(90px);
+    z-index:0;
+}
+
+body.login::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:#3247b8;
+    opacity:.05;
+    bottom:-180px;
+    left:-150px;
+    filter:blur(90px);
+    z-index:0;
+}
+
+/* Container */
+
+#login{
+    width:430px;
+    margin:auto !important;
+    position:relative;
+    z-index:2;
+}
+
+/* Logo */
+
+.login h1{
+    margin:0 0 28px;
+}
+
+.login h1 a{
+    width:190px !important;
+    height:190px !important;
+    margin:0 auto;
+    display:block;
+    background:url("./images/logo.png") center center no-repeat !important;
+    background-size:190px auto !important;
+}
+
+/* Notification */
+
+.login .message,
+.login #login_error,
+.login .success{
+    border-radius:14px;
+    border-left:4px solid #3247b8;
+    box-shadow:none;
+}
+
+/* Card */
+
+.login form{
+    background:#fff;
+    border:none;
+    border-radius:24px;
+    padding:38px;
+    box-shadow:
+        0 12px 40px rgba(15,23,42,.08),
+        0 4px 16px rgba(15,23,42,.05);
+}
+
+/* Label */
+
+.login label{
+    color:#374151;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* Inputs */
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"]{
+
+    height:54px;
+    border-radius:14px;
+    border:1px solid #d7dce5;
+    padding:0 16px;
+    font-size:15px;
+    transition:.25s;
+    box-shadow:none;
+
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus,
+.login input[type="email"]:focus{
+
+    border-color:#3247b8;
+    box-shadow:0 0 0 4px rgba(50,71,184,.12);
+
+}
+
+/* Remember */
+
+.forgetmenot{
+    margin:16px 0;
+}
+
+/* Button */
+
+.wp-core-ui .button-primary{
+
+    width:100%;
+    height:54px;
+    border:none !important;
+    border-radius:14px;
+    background:#3247b8 !important;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:.25s;
+    box-shadow:none;
+
+}
+
+.wp-core-ui .button-primary:hover{
+
+    background:#2438a2 !important;
+    transform:translateY(-2px);
+
+}
+
+.wp-core-ui .button-primary:focus-visible,
+.login #nav a:focus-visible,
+.login #backtoblog a:focus-visible{
+    outline:3px solid rgba(50,71,184,.35);
+    outline-offset:3px;
+}
+
+/* Links */
+
+.login #nav,
+.login #backtoblog{
+
+    text-align:center;
+    margin-top:18px;
+
+}
+
+.login #nav a,
+.login #backtoblog a{
+
+    color:#64748b;
+    text-decoration:none;
+    transition:.25s;
+
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover{
+
+    color:#3247b8;
+
+}
+
+/* Hide Language */
+
+.language-switcher{
+    display:none !important;
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+    #login{
+        width:92%;
+    }
+
+    .login form{
+        padding:28px;
+    }
+
+    .login h1 a{
+        width:160px !important;
+        height:160px !important;
+        background-size:160px auto !important;
+    }
+
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    .wp-core-ui .button-primary,
+    .login input[type="text"],
+    .login input[type="password"],
+    .login input[type="email"],
+    .login #nav a,
+    .login #backtoblog a{
+        transition:none;
+    }
+
+    .wp-core-ui .button-primary:hover{
+        transform:none;
+    }
+
+}

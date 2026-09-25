@@ -1,0 +1,485 @@
+/* Fika Pouches editorial Single Post — loaded only on singular blog posts. */
+.fika-editorial-post {
+	--fika-ink: #141824;
+	--fika-copy: #303644;
+	--fika-muted: #697181;
+	--fika-line: #e5e8ee;
+	--fika-soft: #f5f7fb;
+	--fika-brand: #173fa6;
+	--fika-brand-dark: #0b225d;
+	--fika-radius: 16px;
+}
+
+.fika-editorial-post .article-inner,
+.fika-editorial-post .comments-area {
+	max-width: 860px;
+	margin-inline: auto;
+}
+
+.fika-editorial-post .entry-header {
+	max-width: 860px;
+	margin-inline: auto;
+	text-align: left;
+}
+
+.fika-editorial-post .entry-title {
+	color: var(--fika-ink);
+	font-size: clamp(2.15rem, 4vw, 3.35rem);
+	font-weight: 750;
+	letter-spacing: -0.035em;
+	line-height: 1.12;
+	text-wrap: balance;
+}
+
+.fika-editorial-post .entry-meta {
+	color: var(--fika-muted);
+	font-size: .875rem;
+	letter-spacing: .02em;
+}
+
+.fika-editorial-post .entry-content {
+	color: var(--fika-copy);
+	font-size: 18px;
+	line-height: 1.82;
+	text-rendering: optimizeLegibility;
+}
+
+.fika-editorial-post .entry-content > p,
+.fika-editorial-post .entry-content > ul,
+.fika-editorial-post .entry-content > ol,
+.fika-editorial-post .entry-content > blockquote,
+.fika-editorial-post .entry-content > figure,
+.fika-editorial-post .entry-content > table,
+.fika-editorial-post .entry-content > pre,
+.fika-editorial-post .entry-content > .fika-note,
+.fika-editorial-post .entry-content > .fika-tip,
+.fika-editorial-post .entry-content > .fika-warning,
+.fika-editorial-post .entry-content > .fika-summary {
+	margin-bottom: 1.45em;
+}
+
+.fika-editorial-post .entry-content p { margin-top: 0; }
+
+.fika-editorial-post .entry-content h2,
+.fika-editorial-post .entry-content h3,
+.fika-editorial-post .entry-content h4 {
+	color: var(--fika-ink);
+	font-weight: 750;
+	letter-spacing: -.02em;
+	line-height: 1.28;
+	scroll-margin-top: 120px;
+	text-wrap: balance;
+}
+
+.fika-editorial-post .entry-content h2 {
+	border-bottom: 1px solid var(--fika-line);
+	font-size: clamp(1.7rem, 3vw, 2.15rem);
+	margin: 2.15em 0 .8em;
+	padding-bottom: .42em;
+}
+
+.fika-editorial-post .entry-content h3 {
+	font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+	margin: 1.75em 0 .65em;
+}
+
+.fika-editorial-post .entry-content h4 {
+	font-size: 1.15rem;
+	margin: 1.5em 0 .55em;
+}
+
+.fika-editorial-post .entry-content a {
+	color: var(--fika-brand);
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-thickness: .08em;
+	text-underline-offset: .18em;
+}
+
+.fika-editorial-post .entry-content a:hover { color: var(--fika-brand-dark); }
+
+.fika-editorial-post .entry-content ul,
+.fika-editorial-post .entry-content ol { padding-left: 1.4em; }
+
+.fika-editorial-post .entry-content li {
+	margin-bottom: .45em;
+	padding-left: .18em;
+}
+
+.fika-editorial-post .entry-content li::marker {
+	color: var(--fika-brand);
+	font-weight: 700;
+}
+
+.fika-editorial-post .entry-content blockquote {
+	background: var(--fika-soft);
+	border: 0;
+	border-left: 4px solid var(--fika-brand);
+	border-radius: 0 var(--fika-radius) var(--fika-radius) 0;
+	color: var(--fika-ink);
+	font-size: 1.05em;
+	font-style: normal;
+	margin-inline: 0;
+	padding: 1.25em 1.4em;
+}
+
+.fika-editorial-post .entry-content blockquote > :last-child { margin-bottom: 0; }
+
+.fika-editorial-post .entry-content img {
+	border-radius: 12px;
+	height: auto;
+}
+
+.fika-editorial-post .entry-content figure,
+.fika-editorial-post .entry-content .wp-caption { max-width: 100%; }
+
+.fika-editorial-post .entry-content figcaption,
+.fika-editorial-post .entry-content .wp-caption-text {
+	color: var(--fika-muted);
+	font-size: .82rem;
+	font-style: normal;
+	line-height: 1.55;
+	margin-top: .65em;
+	text-align: center;
+}
+
+.fika-editorial-post .entry-content table {
+	border: 1px solid var(--fika-line);
+	border-collapse: separate;
+	border-radius: 12px;
+	border-spacing: 0;
+	display: block;
+	font-size: .92em;
+	max-width: 100%;
+	min-width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	width: max-content;
+}
+
+.fika-editorial-post .entry-content th,
+.fika-editorial-post .entry-content td {
+	border: 0;
+	border-bottom: 1px solid var(--fika-line);
+	padding: .85em 1em;
+	text-align: left;
+	vertical-align: top;
+}
+
+.fika-editorial-post .entry-content th {
+	background: #edf1f8;
+	color: var(--fika-ink);
+	font-weight: 700;
+}
+
+.fika-editorial-post .entry-content tr:nth-child(even) td { background: #fafbfc; }
+.fika-editorial-post .entry-content tr:last-child td { border-bottom: 0; }
+
+.fika-editorial-post .entry-content code {
+	background: #eef1f5;
+	border-radius: 5px;
+	color: #b42318;
+	font-size: .88em;
+	padding: .14em .38em;
+}
+
+.fika-editorial-post .entry-content pre {
+	background: #111827;
+	border-radius: 12px;
+	color: #f9fafb;
+	overflow-x: auto;
+	padding: 1.25em;
+}
+
+.fika-editorial-post .entry-content pre code {
+	background: none;
+	color: inherit;
+	padding: 0;
+}
+
+.fika-editorial-post .entry-content iframe,
+.fika-editorial-post .entry-content video { max-width: 100%; }
+
+.fika-editorial-post .entry-content iframe[src*="youtube"],
+.fika-editorial-post .entry-content iframe[src*="vimeo"] {
+	aspect-ratio: 16 / 9;
+	height: auto;
+	width: 100%;
+}
+
+.fika-editorial-post .entry-content hr {
+	background: var(--fika-line);
+	border: 0;
+	height: 1px;
+	margin: 2.5em 0;
+}
+
+.fika-post-breadcrumbs {
+	align-items: center;
+	color: var(--fika-muted);
+	display: flex;
+	flex-wrap: wrap;
+	font-size: .78rem;
+	gap: .45rem;
+	line-height: 1.5;
+	margin-bottom: .8rem;
+}
+
+.fika-post-breadcrumbs a {
+	color: inherit !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+}
+
+.fika-post-breadcrumbs a:hover { color: var(--fika-brand) !important; }
+
+.fika-post-breadcrumbs [aria-current="page"] {
+	max-width: 42ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.fika-breadcrumb-separator { color: #a2a8b3; }
+
+.fika-post-utility {
+	align-items: center;
+	color: var(--fika-muted);
+	display: flex;
+	flex-wrap: wrap;
+	font-size: .8rem;
+	font-weight: 600;
+	gap: .7rem;
+	letter-spacing: .01em;
+	margin-bottom: 1.8rem;
+}
+
+.fika-utility-dot {
+	background: #aab0bc;
+	border-radius: 50%;
+	height: 4px;
+	width: 4px;
+}
+
+.fika-toc {
+	background: var(--fika-soft);
+	border: 1px solid var(--fika-line);
+	border-radius: var(--fika-radius);
+	margin: 1.8em 0 2.25em;
+	padding: 1.05em 1.25em;
+}
+
+.fika-toc summary {
+	color: var(--fika-ink);
+	cursor: pointer;
+	font-size: .95em;
+	font-weight: 750;
+	list-style-position: outside;
+}
+
+.fika-toc ol {
+	font-size: .92em;
+	line-height: 1.55;
+	margin: 1em 0 .15em;
+	padding-left: 1.35em;
+}
+
+.fika-toc li { margin-bottom: .5em !important; }
+.fika-toc .fika-toc-level-3 { margin-left: 1.1em; }
+
+.fika-toc a {
+	color: var(--fika-copy) !important;
+	font-weight: 550 !important;
+	text-decoration: none !important;
+}
+
+.fika-toc a:hover { color: var(--fika-brand) !important; }
+
+.fika-note,
+.fika-tip,
+.fika-warning,
+.fika-summary {
+	border: 1px solid;
+	border-radius: var(--fika-radius);
+	padding: 1.15em 1.3em;
+}
+
+.fika-note > :last-child,
+.fika-tip > :last-child,
+.fika-warning > :last-child,
+.fika-summary > :last-child { margin-bottom: 0; }
+
+.fika-note { background: #eff6ff; border-color: #bfdbfe; }
+.fika-tip { background: #ecfdf3; border-color: #a7f3d0; }
+.fika-warning { background: #fff7ed; border-color: #fed7aa; }
+.fika-summary { background: #f5f3ff; border-color: #ddd6fe; }
+
+.fika-author-box {
+	align-items: flex-start;
+	background: #fff;
+	border: 1px solid var(--fika-line);
+	border-radius: var(--fika-radius);
+	display: flex;
+	gap: 1rem;
+	margin: 3rem 0 0;
+	padding: 1.35rem;
+}
+
+.fika-author-mark {
+	align-items: center;
+	background: var(--fika-brand-dark);
+	border-radius: 50%;
+	color: #fff;
+	display: inline-flex;
+	flex: 0 0 52px;
+	font-size: 1.25rem;
+	font-weight: 800;
+	height: 52px;
+	justify-content: center;
+}
+
+.fika-author-eyebrow,
+.fika-author-name,
+.fika-author-bio { margin: 0; }
+
+.fika-author-eyebrow {
+	color: var(--fika-muted);
+	font-size: .72rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.fika-author-name {
+	color: var(--fika-ink);
+	font-size: 1.05rem;
+	font-weight: 750;
+	line-height: 1.35;
+	margin-top: .12rem;
+}
+
+.fika-author-bio {
+	color: var(--fika-muted);
+	font-size: .86rem;
+	line-height: 1.6;
+	margin-top: .4rem;
+}
+
+.fika-related-posts {
+	border-top: 1px solid var(--fika-line);
+	margin-top: 3rem;
+	padding-top: 2.5rem;
+}
+
+.fika-related-posts > h2 {
+	border: 0 !important;
+	font-size: clamp(1.55rem, 3vw, 2rem) !important;
+	margin: 0 0 1.25rem !important;
+	padding: 0 !important;
+}
+
+.fika-related-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fika-related-card {
+	border: 1px solid var(--fika-line);
+	border-radius: 14px;
+	overflow: hidden;
+	transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.fika-related-card:hover {
+	border-color: #c9d2e5;
+	box-shadow: 0 14px 35px rgba(23, 39, 78, .09);
+	transform: translateY(-3px);
+}
+
+.fika-related-card-link {
+	color: inherit !important;
+	display: block;
+	font-weight: inherit !important;
+	height: 100%;
+	text-decoration: none !important;
+}
+
+.fika-related-card:focus-within {
+	border-color: var(--fika-brand);
+	box-shadow: 0 0 0 3px rgba(23, 63, 166, .14);
+}
+
+.fika-related-card-link:focus-visible {
+	outline: 2px solid var(--fika-brand);
+	outline-offset: -3px;
+}
+
+.fika-related-media {
+	aspect-ratio: 16 / 10;
+	background: #edf1f8;
+	display: block;
+	overflow: hidden;
+}
+
+.fika-related-image {
+	border-radius: 0 !important;
+	height: 100% !important;
+	object-fit: cover;
+	transition: transform .3s ease;
+	width: 100%;
+}
+
+.fika-related-card:hover .fika-related-image { transform: scale(1.025); }
+
+.fika-related-placeholder {
+	background: linear-gradient(135deg, #edf1f8, #dce4f3);
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.fika-related-body { padding: 1rem; }
+.fika-related-body time { color: var(--fika-muted); font-size: .72rem; }
+
+.fika-related-body h3 {
+	color: var(--fika-ink) !important;
+	font-size: 1rem !important;
+	line-height: 1.4 !important;
+	margin: .35rem 0 .7rem !important;
+}
+
+.fika-related-link {
+	color: var(--fika-brand) !important;
+	font-size: .78rem;
+	font-weight: 700 !important;
+	text-decoration: none !important;
+}
+
+@media (max-width: 849px) {
+	.fika-editorial-post .entry-content { font-size: 17px; line-height: 1.76; }
+	.fika-related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.fika-related-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+@media (max-width: 549px) {
+	.fika-editorial-post .entry-title { font-size: clamp(2rem, 10vw, 2.55rem); }
+	.fika-editorial-post .entry-content h2 { margin-top: 1.8em; }
+	.fika-toc { padding: .95em 1em; }
+	.fika-author-box { flex-direction: column; }
+	.fika-related-grid { grid-template-columns: 1fr; }
+	.fika-related-card:last-child:nth-child(odd) { grid-column: 1; }
+	.fika-post-breadcrumbs [aria-current="page"] { max-width: 24ch; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fika-related-card,
+	.fika-related-image { transition: none; }
+}
+
+@media print {
+	.fika-post-breadcrumbs,
+	.fika-post-utility,
+	.fika-related-posts { display: none !important; }
+	.fika-editorial-post .entry-content { color: #000; font-size: 12pt; }
+}

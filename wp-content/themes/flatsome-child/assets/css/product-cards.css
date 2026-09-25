@@ -1,0 +1,54 @@
+.fika-product-view {
+	margin-top: 14px;
+}
+
+.fika-product-view .fika-product-view-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	min-height: 44px;
+	margin: 0;
+	padding: 10px 16px;
+	border: 1px solid #202020;
+	border-radius: 9px;
+	background: #202020;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	letter-spacing: 0;
+	text-decoration: none;
+	text-transform: none;
+	white-space: normal;
+	transition: background-color .15s ease, border-color .15s ease;
+}
+
+.fika-product-view .fika-product-view-button:hover {
+	border-color: #404040;
+	background: #404040;
+	color: #fff;
+}
+
+.fika-product-view .fika-product-view-button:focus-visible {
+	outline: 2px solid #202020;
+	outline-offset: 3px;
+}
+
+@media (max-width: 549px) {
+	.fika-product-view {
+		margin-top: 10px;
+	}
+	.fika-product-view .fika-product-view-button {
+		padding: 10px 8px;
+		font-size: 13px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.fika-product-view .fika-product-view-button {
+		transition: none;
+	}
+}
